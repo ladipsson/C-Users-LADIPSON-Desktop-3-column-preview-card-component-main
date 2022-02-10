@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+}
+body {
+  background-color: #F2F2F2;
+  min-width: 350px;
+  min-height: 100vh;
+  max-width: 1440px;
+  max-height: 1440px;
+  position: relative;
+}
+.main-container {
+  position: absolute;
+  display: flex;
+  /* margin: 10px 10px; */
+  min-width: 300px;
+  max-width: 900px;
+  top: 100px;
+  left: 340px;
+  right: 100px;
+  bottom: 100px;
+  /* height: 500px; */
+  /* width: 800px; */
+  overflow: hidden;
+
+}
+.sedans {
+  background-color: #E38826;
+  margin-bottom: -21px;
+  position: relative;
+  height: 500px;
+  border-radius: 13px 0 0 13px;
+
+}
+.suvs {
+  background-color: #006970;
+  margin-bottom: -21px;
+  position: relative;
+  height: 500px;
+}
+.luxury {
+  background-color: #004241;
+  margin-bottom: -21px;
+  position: relative;
+  height: 500px;
+  border-radius: 0 13px 13px 0;
+}
+p {
+  color: #FFFFFF;
+  font-family: 'Lexend Deca', sans-serif;
+  position: relative;
+  /* left: 40px; */
+  flex-wrap: wrap;
+  padding-left: 50px;
+  line-height: 25px;
+  margin-right: 5px;
+  padding-right: 30px;
+  padding-top: 30px;
+  font-size: 15px;
+}
+h1 {
+  color: #F2F2F2;
+  font-family: 'Big Shoulders Display', cursive;
+  position: relative;
+  padding-left: 50px;
+  padding-top: 40px;
+}
+img {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+.button1 {
+  padding-left: 50px;
+  padding-top: 90px;
+  margin-bottom: 40px;
+}
+.sedan-button {
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Lexend Deca', sans-serif;
+  color: #E38826;
+  border: 0;
+}
+.button2 {
+  padding-left: 50px;
+  padding-top: 90px;
+}
+.suv-button {
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: 'Lexend Deca', sans-serif;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  text-align: center;
+  color: #006970;
+  border: 0;
+}
+.button3 {
+  padding-left: 50px;
+  padding-top: 90px;
+}
+.luxury-button {
+  padding: 15px 30px;
+  font-size: 15px;
+  border-radius: 20px;
+  background-color: #F2F2F2;
+  text-decoration: none;
+  font-family: 'Lexend Deca', sans-serif;
+  text-align: center;
+  color: #004241;
+  border: 0;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #F2F2F2;
+  color: #F2F2F2;
+}
+@media (max-width: 425px) {
+  body {
+    align-content: center;
+    justify-content: center;
+    height: 900px;
+    min-width: 100px;
+    max-width: 280px;
+  }
+  .main-container {
+    display: block;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    left: 30px;
+    right: 50px;
+    min-width: 100px;
+    max-width: 300px;
+    margin-bottom: 100px;
+    padding-bottom: 100px;
+  }
+  .sedans {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+
+  }
+  .suvs {
+    width: 100%;
+
+  }
+  .luxury {
+    width: 100%;
+    border-radius: 0 0 10px 10px;
+  }
+}
