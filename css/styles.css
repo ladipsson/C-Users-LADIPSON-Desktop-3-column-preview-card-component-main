@@ -8,20 +8,16 @@ body {
   max-width: 1440px;
   max-height: 1440px;
   position: relative;
-}
-.main-container {
-  position: absolute;
   display: flex;
-  /* margin: 10px 10px; */
-  min-width: 300px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container {
+  display: flex;
   max-width: 900px;
-  top: 100px;
-  left: 340px;
-  right: 100px;
-  bottom: 100px;
-  /* height: 500px; */
-  /* width: 800px; */
   overflow: hidden;
+  border-radius: 1rem;
 
 }
 .sedans {
@@ -29,7 +25,7 @@ body {
   margin-bottom: -21px;
   position: relative;
   height: 500px;
-  border-radius: 13px 0 0 13px;
+  border-radius: 10px 0 0 10px;
 
 }
 .suvs {
@@ -43,7 +39,7 @@ body {
   margin-bottom: -21px;
   position: relative;
   height: 500px;
-  border-radius: 0 13px 13px 0;
+  border-radius: 0 10px 10px 0;
 }
 p {
   color: #FFFFFF;
@@ -64,12 +60,13 @@ h1 {
   position: relative;
   padding-left: 50px;
   padding-top: 40px;
+  text-transform: capitalize;
 }
 img {
   padding-left: 50px;
   padding-top: 40px;
 }
-.button1 {
+.button {
   padding-left: 50px;
   padding-top: 90px;
   margin-bottom: 40px;
@@ -85,10 +82,7 @@ img {
   color: #E38826;
   border: 0;
 }
-.button2 {
-  padding-left: 50px;
-  padding-top: 90px;
-}
+
 .suv-button {
   padding: 15px 30px;
   font-size: 15px;
@@ -100,10 +94,7 @@ img {
   color: #006970;
   border: 0;
 }
-.button3 {
-  padding-left: 50px;
-  padding-top: 90px;
-}
+
 .luxury-button {
   padding: 15px 30px;
   font-size: 15px;
@@ -115,30 +106,29 @@ img {
   color: #004241;
   border: 0;
 }
-button:hover {
+a:hover {
   background-color: transparent;
-  border: 2px solid #F2F2F2;
+  border: 1px solid #F2F2F2;
   color: #F2F2F2;
+  transition: 0.5s;
 }
 @media (max-width: 425px) {
   body {
     align-content: center;
     justify-content: center;
-    height: 900px;
     min-width: 100px;
     max-width: 280px;
+    min-height: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .main-container {
     display: block;
-    align-content: center;
-    justify-content: center;
     position: relative;
     left: 30px;
     right: 50px;
     min-width: 100px;
     max-width: 300px;
-    margin-bottom: 100px;
-    padding-bottom: 100px;
   }
   .sedans {
     width: 100%;
@@ -152,5 +142,6 @@ button:hover {
   .luxury {
     width: 100%;
     border-radius: 0 0 10px 10px;
+    padding-bottom: 30px;
   }
 }
